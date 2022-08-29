@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova</title>
+    <script defer src="../js/prova.js"></script>
+
+    <link rel="stylesheet" href="../css/prova.css">
+
+    <script src="https://kit.fontawesome.com/7936146879.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <header>
+            <header>
+                <nav class="nav-bar">
+                    <div class="logo">
+                        <img src="../img/logo2.png" alt="" id="logo" >
+                    </div>
+    
+                    <div class="nav-list">
+                        <ul>
+                            
+        
+                            <li class="nav-item">
+                                <button class="login-button"><a href="../index.html">Sair da conta</a></button>
+                            </li>
+                        </ul>
+                    </div>
+                  
+                    <div class="mobile-menu-icon">
+                        <button onclick="menuShow()" id="teste1">
+                            <img class="icon" src="../img/botao-de-menu-de-tres-linhas-horizontais.png"
+                            width="25px" 
+                            height="25px" 
+                            alt="">
+                        </button>
+                    </div>
+                </nav>
+    
+                <div class="mobile-menu">
+                    <ul>
+                        <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">cursos</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Login</a></li>
+                    </ul>
+                </div>
+        </header>
+
+        <main>
+            <section class="body-test">
+                <div class="body-teste__attempts">
+                    <h1 id="titulo">Tentativa 1</h1>
+                </div>
+
+                <div class="body-test__wrapper">
+                    <div class="body-test__questions">
+                        <div class="body-test__questions--one">
+                            <h2>1- Qual das opções podem ser consideradas um algoritmo?</h2>
+                            <label for=""> <input type="radio" name="questao1" id="errado"> Uma revista em quadrinhos
+                            </label>
+                            <label for="" class="borda"> <input type="radio" name="questao1" id="certa1"> Uma receita de bolo </label>
+                            <label for=""> <input type="radio" name="questao1" id="errado"> Um artigo jornalístico
+                            </label>
+                            <label for=""> <input type="radio" name="questao1" id="errado"> Uma auto bibliografia
+                            </label>
+                        </div>
+
+                        <div class="body-test__questions--two">
+                            <h2>2- qual será o resultado final da expressão? 5 + ( 10 - 6) * 2</h2>
+                            <label for=""> <input type="radio" name="questao2" id="errado"> 12 </label>
+                            <label for="" class="borda"> <input type="radio" name="questao2" id="certa2"> 13 </label>
+                            <label for=""> <input type="radio" name="questao2" id="errado"> 11 </label>
+                            <label for=""> <input type="radio" name="questao2" id="errado"> 10</label>
+                        </div>
+
+                        <div class="body-test__questions--three">
+                            <h2>3- Qual é o sinal correto para atribuir valores à uma variável?</h2>
+                            <label for=""> <input type="radio" name="questao3" id="errado"> = </label>
+                            <label for=""> <input type="radio" name="questao3" id="errado"> == </label>
+                            <label for="" class="borda"> <input type="radio" name="questao3" id="certa3">
+                                <- </label>
+                                    <label for=""> <input type="radio" name="questao3" id="errado"> -> </label>
+                        </div>
+
+                        <div class="body-test__questions--four">
+                            <h2>4- Qual dos seguintes itens mostrar um laço for (Para) escrito corretamente?</h2>
+                            <label for=""> <input type="radio" name="questao4" id="errado"> para contador de 1 até 10
+                                passo -1 faça </label>
+                            <label for=""> <input type="radio" name="questao4" id="errado"> para contador de 10 até 1
+                                passo 1 faça </label>
+                            <label for=""> <input type="radio" name="questao4" id="errado"> para contador de 10 até -1
+                                faça </label>
+                            <label for="" class="borda"> <input type="radio" name="questao4" id="certa4"> para contador de 1 até 10
+                                faça </label>
+                        </div>
+
+                        <div class="body-test__questions--five">
+                            <h2>5- Quais são os estados possíveis que um tipo lógico pode assumir?</h2>
+                            <label for=""> <input type="radio" name="questao5" id="errado"> Verdadeiro, Duvidoso.
+                            </label>
+                            <label for=""> <input type="radio" name="questao5" id="errado">Falso, Duvidoso, Verdadeiro.
+                            </label>
+                            <label for=""> <input type="radio" name="questao5" id="errado"> Certo, Certo. </label>
+                            <label for="" class="borda"> <input type="radio" name="questao5" id="certa5"> Verdadeiro, Falso </label>
+                        </div>
+
+                        <div class="body-test__questions--six">
+                            <h2>6- Por que se deve ter cuidado quando criamos estruturas de repetição</h2>
+                            <label for="" class="borda"> <input type="radio" name="questao6" id="certa6"> Pois pode ser criado um loop
+                                infinito </label>
+                            <label for=""> <input type="radio" name="questao6" id="errado">Não é necessário ter cuidado
+                            </label>
+                            <label for=""> <input type="radio" name="questao6" id="errado"> estruturas de repetições não
+                                são muito utlizadas </label>
+                            <label for=""> <input type="radio" name="questao6" id="errado"> Pois elas exigem muitas
+                                linhas de código para fazer uma mesma tarefa </label>
+                        </div>
+
+                        <div class="body-test__questions--seven">
+                            <h2>7- Qual dos seguintes itens a seguir pode ser representado por um valor constante?</h2>
+                            <label for=""> <input type="radio" name="questao7" id="errado"> Salário de um funcionário
+                            </label>
+                            <label for=""> <input type="radio" name="questao7" id="errado">Salário de um funcionário
+                            </label>
+                            <label for=""> <input type="radio" name="questao7" id="errado"> Distância da terra ao sol
+                            </label>
+                            <label for="" class="borda"> <input type="radio" name="questao7" id="certa7"> Valor de PI </label>
+                        </div>
+
+                        <div class="body-test__questions--eight">
+                            <h2>8- o que o comando "escreva" faz</h2>
+                            <label for=""> <input type="radio" name="questao8" id="errado"> um calculo de IMC</label>
+                            <label for=""> <input type="radio" name="questao8" id="errado">um loop </label>
+                            <label for="" class="borda"> <input type="radio" name="questao8" id="certa8"> uma impressão na
+                                tela</label>
+                            <label for=""> <input type="radio" name="questao8" id="errado"> Nada </label>
+                        </div>
+
+                        <div class="body-test__questions--nine">
+                            <h2>9- O que é uma variável? </h2>
+                            <label for=""> <input type="radio" name="questao9" id="errado"> Local na memória CMOS do
+                                computador empregado para armazenar de forma temporária os dados que são utilizados pelo
+                                programa. </label>
+                            <label for=""> <input type="radio" name="questao9" id="errado">Valor que não varia conforme
+                                passa o tempo, sendo sempre modificado conforme o programa vai sendo executado. </label>
+                            <label for="" class="borda"> <input type="radio" name="questao9" id="certa9"> Valor que varia conforme
+                                passa o tempo, sendo sempre modificado conforme o programa vai sendo executado. </label>
+                            <label for=""> <input type="radio" name="questao9" id="errado"> Valor armazenado em locais
+                                variáveis no computador como HD, RAM, OU MEMÓRIA CACHE. </label>
+                        </div>
+
+                        <div class="body-test__questions--ten">
+                            <h2>10- Para que serve o operador aritmético do modulo * ?</h2>
+                            <label for=""> <input type="radio" name="questao10" id="errado"> subtração </label>
+                            <label for=""> <input type="radio" name="questao10" id="errado">adição</label>
+                            <label for=""> <input type="radio" name="questao10" id="errado">divisão </label>
+                            <label for="" class="borda"> <input type="radio" name="questao10" id="certa10"> multiplicação </label>
+                        </div>
+
+                        <div class="body-test__questions--eleven">
+                            <h2> 11 – Como podemos definir um Algoritmo?</h2>
+                            <label for=""> <input type="radio" name="questao11" id="errado">Sequência de cômodos
+                                ordenados, infinitos e ambíguos que são empregados para executar uma tarefa </label>
+                            <label for=""> <input type="radio" name="questao11" id="errado">Sequência de instruções
+                                ordenadas, infinitas e não-ambíguas que são empregadas para executar uma tarefa </label>
+                            <label for="" class="borda"> <input type="radio" name="questao11" id="certa11">Sequência de instrução
+                                ordenadas, finitas e não-ambíguas que são empregadas para executar uma tarefa </label>
+                            <label for=""> <input type="radio" name="questao11" id="errado"> Sequência de comados
+                                ordenados, infinitos e não-ambíguas que são empregados para executar uma tarefa </label>
+                        </div>
+
+                        <div class="body-test__questions--twelve">
+                            <h2>12- Um trecho de código dentro de um algoritmo precisa ser repetido exatamente 62 vezes
+                                em sequência. Qual das estruturas a seguir é a mais indicada para realizar essa tarefa?
+                            </h2>
+                            <label for=""> <input type="radio" name="questao12" id="errado"> Enquanto </label>
+                            <label for=""> <input type="radio" name="questao12" id="errado">se/ então </label>
+                            <label for=""> <input type="radio" name="questao12" id="errado">Array </label>
+                            <label for="" class="borda"> <input type="radio" name="questao12" id="certa12"> Para </label><br>
+                        </div>
+
+                        <div class="body-test__button">
+                            <button onclick="check()" id="btn_prova">FINALIZAR PROVA</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+            </div>
+
+            <ul class="social-footer">
+                <li><a href="#">
+                        <i class="fab fa-facebook-square"></i>
+                    </a></li>
+                <li><a href="#">
+                        <i class="fab fa-instagram-square"></i>
+                    </a></li>
+                <li><a href="#">
+                        <i class="fab fa-twitter-square"></i>
+                    </a></li>
+                <li><a href="#">
+                        <i class="fab fa-whatsapp-square"></i>
+                    </a></li>
+            </ul>
+
+            <ul class="menu-footer">
+                <li>
+                    <a href="../index.html"> Home</a>
+                </li>
+
+                <li>
+                    <a href="sobre.html"> Sobre</a>
+                </li>
+
+                <li>
+                    <a href="contato.html"> Contato</a>
+                </li>
+
+                <li>
+                    <a href="cadastro.html"> Cadastro</a>
+                </li>
+            </ul>
+            <p>©Copyright - Todos os Direitos Resevados</p>
+        </footer>
+    </div>
+    <script src="../js/script.js"></script>
+    <script src="https://kit.fontawesome.com/7936146879.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Certificado </title>
+
+    <link rel="stylesheet" href="../css/certificado.css">
+</head>
+
+<body>
+
+   
+        
+            <header>
+                <nav class="nav-bar">
+                    <div class="logo">
+                        <img src="../img/logo2.png" alt="" id="logo">
+                    </div>
+
+                    <div class="nav-list">
+                        <ul>
+
+
+                            <li class="nav-item">
+                                <button class="login-button"><a href="../index.html">Sair da conta</a></button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mobile-menu-icon">
+                        <button onclick="menuShow()" id="teste1">
+                            <img class="icon" src="../img/botao-de-menu-de-tres-linhas-horizontais.png" width="25px"
+                                height="25px" alt="">
+                        </button>
+                    </div>
+                </nav>
+
+                <div class="mobile-menu">
+                    <ul>
+                        <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">cursos</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Login</a></li>
+                    </ul>
+                </div>
+            </header>
+        
+
+        <main class="certificado-main">
+
+            <section  id="form-certificado">  
+                <h1 id="title-certificado"> digite seus dados para gerar seu certificado</h1>
+                <label for="name">Digite seu nome e sobrenome:</label><br/>
+                <input type="text" name="name" id="user_name_certificado" placeholder="nome" required>
+                <br/><br/>
+                <label for="cpf">Digite seu CPF:</label><br/>
+                <input type="text" name="cpf" id="user_cpf_certificado" placeholder="cpf" required>
+                <br/><br/>
+                <button onclick="gerarcert()" id="certificado-button">GERAR CERTIFICADO</button>
+            </section>
+
+
+
+            <section class="certificado">
+                <div class="certificado__title">
+                    <span > CERTIFICADO DE DIPLOMA </span>
+                </div>
+
+                <div class="main-certificado">
+                    <span class="title_certificado"> ISSO CERTIFICA QUE </span>
+                    <span class="name_certificado"><span id="name-certificado">dsasd </span> </span>
+                    <h2 class="cpf_certificado">
+                        portador do CPF: <span id="cpf_certificado"></span> completou com
+                         êxito
+                         o curso de Lógica de Programação na data <span id="certificado-data"></span> exigido para se formar
+                        na IANES TECH!
+                    </h2>
+                    
+                </div>
+            </section>
+        </main>
+    
+
+    <script>
+
+       function gerarcert(){
+            document.getElementById("name-certificado").innerHTML = document.getElementById('user_name_certificado').value;
+            document.getElementById("cpf_certificado").innerHTML = document.getElementById('user_cpf_certificado').value;
+            document.getElementById("certificado-data").innerHTML = data() ;
+            window.print();
+
+        }
+
+        function data(){
+            let data = new Date();
+
+            return data.getDate() + "/" + (data.getMonth()+1) + "/" + data.getFullYear();
+        }
+
+    </script>
+
+</body>
+
+</html>
